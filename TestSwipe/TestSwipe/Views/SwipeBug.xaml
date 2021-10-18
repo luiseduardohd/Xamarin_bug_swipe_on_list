@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestSwipe.Views.SwipeBug">
+    <ContentPage.Content>
+        <Frame BackgroundColor="purple" Padding="1">
+            <Frame.GestureRecognizers>
+                <SwipeGestureRecognizer Swiped="SwipeGestureRecognizer_Swiped"  Direction="Down"/>
+            </Frame.GestureRecognizers>
+            <ListView BackgroundColor="Yellow" Margin="10">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>mono</x:String>
+                        <x:String>monodroid</x:String>
+                        <x:String>monotouch</x:String>
+                        <x:String>monorail</x:String>
+                        <x:String>monodevelop</x:String>
+                        <x:String>monotone</x:String>
+                        <x:String>monopoly</x:String>
+                        <x:String>monomodal</x:String>
+                        <x:String>monophonic</x:String>
+                        <x:String>monoacidi</x:String>
+                        <x:String>monocracy</x:String>
+                        <x:String>monochrome</x:String>
+                        <x:String>monoxide</x:String>
+                        <x:String>monolayer</x:String>
+                        <x:String>monoacetin</x:String>
+                        <x:String>monomio</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label Text="{Binding}" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
