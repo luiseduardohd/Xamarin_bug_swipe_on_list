@@ -123,13 +123,13 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\TestSwipe\TestSwipe.csproj">
-      <Project>{853DF7C9-B3F3-4CCF-A7AA-5A7524A29880}</Project>
+      <Project>{437BAE95-6618-40DC-8632-688D6F725FE4}</Project>
       <Name>TestSwipe</Name>
     </ProjectReference>
   </ItemGroup>
